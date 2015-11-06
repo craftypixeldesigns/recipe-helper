@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Recipe Helper</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    	<script type='text/javascript' src='script.js'></script>
+	</head>
+
+	<body>
+		<section id="sm-recipe">
+			<section class="header">
+				<div class="sm-main">
+					<img src="img/sm-main.jpg" />
+					<h1><span>Spaghetti & Meatballs</span></h1>
+				</div>
+				<div class="servings">
+					<h2>Servings</h2>
+					<img src="img/servings_person.png" /><img src="img/servings_person.png" /><img src="img/servings_person.png" /><img src="img/servings_person.png" /><img src="img/servings_person.png" /><img src="img/servings_person.png" />
+				</div>
+				<div class="sm-time">
+					<div class="prep">PREP</div><div class="cook">COOK</div><div class="total">1 hr</div>
+				</div>
+				<div class="prep-total">15 min</div><div class="cook-total">45 min</div>
+				<div class="tools">
+					<h2>Tools</h2>
+					<ul>
+						<li>Large saucepan</li>
+						<li>Large bowl</li>
+					</ul>
+				</div>
+			</section>
+
+
+			<!-- Progress timer -->
+			<div id="pbar_outerdiv">
+				<div id="pbar_innerdiv"></div>
+				<div id="pbar_innertext">0%</div>
+				<div id="pbar_donetext">Done!</div>
+			</div>
+
+			<table class="recipe">
+				<tr>
+					<th colspan="3"><h3>Ingredients</h3></th>
+					<th><h3>Directions</h3></th>
+					<th class=""> </th>
+				</tr>
+
+
+				<tr id="ingredients">
+					<td id="ing-amount">2 jars<br><span class="detail">30 oz</span></td>
+					<td class="dots">
+						<div class="circle full-circle reg-color"></div>
+						<div class="circle full-circle reg-color"></div>
+					</td>
+					<td id="ing-type" class="item">spaghetti sauce</td>
+					<td class="directions">
+						<ul>
+							<li class="cook">In a large saucepan, simmer over medium heat for 15 min</li>
+						</ul>
+					</td>
+					<td class="img sm-one"></td>
+				</tr>
+
+				<tr class="table-space">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+	
+
+				<tr id="ingredients">
+					<td id="ing-amount">2 lbs</td>
+					<td class="dots">
+						<div class="circle full-circle lbs-color"></div>
+						<div class="circle full-circle lbs-color"></div>
+					</td>
+					<td id="ing-type" class="item">lean ground beef</td>
+					<td class="directions" rowspan="7">
+						<ul>
+							<li class="prep">In a large bowl, mix together</li>
+							<li class="prep">Shape into 18 meatballs</li>
+							<li class="prep">Place meatballs in simmering sauce</li>
+							<li class="cook">Cover saucepan &amp; cook 30-35 min until cooked through</li>
+						</ul>
+					</td>
+					<td class="img" rowspan"7">
+						<iframe wclassth="640" height="480" 
+						src="https://www.youtube.com/embed/Dt-5u-8ts6E?rel=0&amp;controls=1&amp;color=white&amp;loop=1&amp;start=16&amp;end=34" 
+						frameborder="0" allowfullscreen></iframe>
+					</td>
+				</tr>
+				<tr id="ingredients">
+					<td id="ing-amount">2</td>
+					<td class="dots">
+						<div class="circle full-circle reg-color"></div>
+						<div class="circle full-circle reg-color"></div>
+					</td>
+					<td id="ing-type" class="item">eggs</td>
+				</tr>
+				<tr id="ingredients">
+					<td id="ing-amount">3/4 cup</td>
+					<td class="dots">
+						<div class="circle third-quarter-circle"></div>
+					</td>
+					<td id="ing-type" class="item">dry breadcrumbs</td>
+				</tr>
+				<tr id="ingredients">
+					<td id="ing-amount">1/4 cup</td>
+					<td class="dots">
+						<div class="circle one-quarter-circle cup-color"></div>
+					</td>
+					<td id="ing-type" class="item">fresh parsley,<br><span class="detail">chopped</span></td>
+				</tr>
+				<tr id="ingredients">
+					<td id="ing-amount">1</td>
+					<td class="dots">
+						<div class="circle full-circle reg-color"></div>
+					</td>
+					<td id="ing-type" class="item">garlic clove,<br><span class="detail">minced</span></td>
+				</tr>
+				<tr id="ingredients">
+					<td id="ing-amount">1/2 tsp</td>
+					<td class="dots">
+						<div class="circle half-circle tsp-color"></div>
+					</td>
+					<td id="ing-type" class="item">salt</td>
+				</tr>
+				<tr id="ingredients">
+					<td id="ing-amount">1/4 cup</td>
+					<td class="dots">
+						<div class="circle quarter-circle cup-color"></div>
+					</td>
+					<td id="ing-type" class="item">parmesan cheese</td>
+				</tr>
+
+				<tr class="table-space">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+
+				<tr id="ingredients">
+					<td id="ing-amount">1 lb</td>
+					<td class="dots">
+						<div class="circle quarter-circle lbs-color"></div>
+					</td>
+					<td id="ing-type" class="item">spaghetti noodles,<br>cooked al dente</td>
+					<td class="directions">
+						<ul>
+							<li>Serve sauce &amp; meatballs over spaghetti</li>
+						</ul>
+					</td>
+					<td class="img sm-three"></td>
+				</tr>
+			</table>
+		</section>
+
+		<!-- Ingredients -->
+
+		<div id="ing-1" class="popup measurements">
+			<ul>
+				<li>887 mL</li>
+				<li>850 g</li>
+				<li>3 3/4 cups</li>
+			</ul>
+		</div>
+
+		<!-- <div id="ing-2" class="popup measurements">
+			<ul>
+				<li>32 oz</li>
+				<li>907 g</li>
+				<li>4 cups</li>
+			</ul>
+		</div>
+
+		<div id="ing-3" class="popup measurements">
+			<ul>
+				<li>45 mL</li>
+				<li>45 g</li>
+				<li>3 Tbsp</li>
+				<li>9 tsp</li>
+			</ul>
+		</div>
+
+		<div id="ing-4" class="popup measurements">
+			<ul>
+				<li>6 oz</li>
+				<li>177 mL</li>
+				<li>177 g</li>
+				<li>12 Tbsp</li>
+			</ul>
+		</div>
+
+		<div id="ing-5" class="popup measurements">
+			<ul>
+				<li>59 mL</li>
+				<li>177 g</li>
+				<li>4 Tbsp</li>
+				<li>12 tsp</li>
+			</ul>
+		</div>
+
+		<div id="ing-6" class="popup measurements">
+			<ul>
+				<li>1 tsp</li>
+			</ul>
+		</div>
+
+		<div id="ing-7" class="popup measurements">
+			<ul>
+				<li>2 mL</li>
+			</ul>
+		</div>
+
+		<div id="ing-8" class="popup measurements">
+			<ul>
+				<li>59 mL</li>
+				<li>177 g</li>
+				<li>4 Tbsp</li>
+				<li>12 tsp</li>
+			</ul>
+		</div>
+
+		<div id="ing-9" class="popup measurements">
+			<ul>
+				<li>16 oz</li>
+				<li>454 g</li>
+				<li>2 cups</li>
+			</ul>
+		</div> -->
+
+		<!-- Substitute -->
+		<div id="sub-1" class="popup substitutes">
+			<img src="img/1-sub-1.jpg" />
+			<ul>
+				<li>Alfredo sauce</li>
+				<li>Pesto sauce</li>
+			</ul>
+			<p>30 oz = 30 oz</p>
+		</div>
+
+		<!-- <div id="sub-2" class="popup substitutes">
+			<img src="img/sm-1.jpg" />
+			<ul>
+				<li>Italian sausage</li>
+				<li>Ground turkey</li>
+			</ul>
+			<p>2 lbs = 2 lbs</p>
+		</div>
+
+		<div id="sub-3" class="popup substitutes">
+			<img src="img/sm-1.jpg" />
+			<ul>
+				<li>Flax seed</li>
+				<li>Silken tofu</li>
+			</ul>
+			<p>1 egg = 1/4 cup</p>
+		</div>
+
+		<div id="sub-4" class="popup substitutes">
+			<img src="img/sm-1.jpg" />
+			<ul>
+				<li>Rolled oats</li>
+				<li>Bran cereal</li>
+			</ul>
+			<p>3/4 cup = 3/4 cup</p>
+		</div>
+
+		<div id="sub-5" class="popup substitutes">
+			<img src="img/sm-1.jpg" />
+			<ul>
+				<li>Dried parsley</li>
+				<li>Chervil</li>
+			</ul>
+			<p>1/4 cup = 1/8 cup</p>
+		</div>
+
+		<div id="sub-6" class="popup substitutes">
+			<img src="img/sm-1.jpg" />
+			<ul>
+				<li>Alfredo sauce</li>
+				<li>Pesto sauce</li>
+			</ul>
+			<p>1 oz = 1 oz</p>
+		</div>
+
+		<div id="sub-7" class="popup substitutes">
+			<img src="img/sm-1.jpg" />
+			<ul>
+				<li>Garlic powder</li>
+				<li>Garlic flakes</li>  <!-- 1 clove = 1/2 tsp
+			</ul>
+			<p>1 clove = 1/8 tsp</p>
+		</div>
+
+		<div id="sub-8" class="popup substitutes">
+			<img src="img/sm-1.jpg" />
+			<ul>
+				<li>Grana padana</li>
+				<li>Nutritional yeast</li>
+			</ul>
+			<p>1/4 cup = 1/4 cup</p>
+		</div>
+
+		<div id="sub-9" class="popup substitutes">
+			<img src="img/sm-1.jpg" />
+			<ul>
+				<li>Angel hair pasta</li>
+			</ul>
+			<p>1 lbs = 1 lbs</p>
+		</div>-->
+
+	</body>
+</html>
