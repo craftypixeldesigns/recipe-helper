@@ -2,16 +2,23 @@
 <html>
 	<head>
 		<title>Recipe Helper</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" media="screen" href="leapstrap/css/leapstrap.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 
 		<link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700' rel='stylesheet' type='text/css'>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!-- <script src="leapcursor-with-dependencies.min.js?color=#05AF66"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://js.leapmotion.com/0.3.0-beta3/leap.js"></script>
+		<script type='text/javascript' src="leapstrap/js/leapstrap.js"></script>
     	<script type='text/javascript' src='script.js'></script>
 	</head>
 
-	<body>
+	<body class="leap-interactive" leap-disable-tap="true" leap-disable-hover="true">
 		<section id="sm-recipe">
 			<section class="header">
 				<div class="sm-main">
@@ -37,7 +44,7 @@
 
 
 			<!-- Progress timer -->
-			<div id="pbar_outerdiv">
+			<div id="pbar_outerdiv" class="leap-interactive">
 				<div id="pbar_innerdiv"></div>
 				<div id="pbar_innertext">0%</div>
 				<div id="pbar_donetext">Done!</div>
@@ -51,13 +58,13 @@
 				</tr>
 
 
-				<tr id="ingredients">
-					<td id="ing-amount">2 jars<br><span class="detail">30 oz</span></td>
+				<tr id="ingredients" class="one">
+					<td id="ing-amount" class="leap-interactive">2 jars<br><span class="detail">30 oz</span></td>
 					<td class="dots">
 						<div class="circle full-circle reg-color"></div>
 						<div class="circle full-circle reg-color"></div>
 					</td>
-					<td id="ing-type" class="item">spaghetti sauce</td>
+					<td id="ing-type" class="item leap-interactive">spaghetti sauce</td>
 					<td class="directions">
 						<ul>
 							<li class="cook">In a large saucepan, simmer over medium heat for 15 min</li>
@@ -75,13 +82,13 @@
 				</tr>
 	
 
-				<tr id="ingredients">
-					<td id="ing-amount">2 lbs</td>
+				<tr id="ingredients" class="two">
+					<td id="ing-amount" class="leap-interactive">2 lbs</td>
 					<td class="dots">
 						<div class="circle full-circle lbs-color"></div>
 						<div class="circle full-circle lbs-color"></div>
 					</td>
-					<td id="ing-type" class="item">lean ground beef</td>
+					<td id="ing-type" class="item leap-interactive">lean ground beef</td>
 					<td class="directions" rowspan="7">
 						<ul>
 							<li class="prep">In a large bowl, mix together</li>
@@ -97,47 +104,47 @@
 					</td>
 				</tr>
 				<tr id="ingredients">
-					<td id="ing-amount">2</td>
+					<td id="ing-amount" class="leap-interactive">2</td>
 					<td class="dots">
 						<div class="circle full-circle reg-color"></div>
 						<div class="circle full-circle reg-color"></div>
 					</td>
-					<td id="ing-type" class="item">eggs</td>
+					<td id="ing-type" class="item leap-interactive">eggs</td>
 				</tr>
 				<tr id="ingredients">
-					<td id="ing-amount">3/4 cup</td>
+					<td id="ing-amount" class="leap-interactive">3/4 cup</td>
 					<td class="dots">
 						<div class="circle third-quarter-circle"></div>
 					</td>
-					<td id="ing-type" class="item">dry breadcrumbs</td>
+					<td id="ing-type" class="item leap-interactive">dry breadcrumbs</td>
 				</tr>
 				<tr id="ingredients">
-					<td id="ing-amount">1/4 cup</td>
+					<td id="ing-amount" class="leap-interactive">1/4 cup</td>
 					<td class="dots">
 						<div class="circle one-quarter-circle cup-color"></div>
 					</td>
-					<td id="ing-type" class="item">fresh parsley,<br><span class="detail">chopped</span></td>
+					<td id="ing-type" class="item leap-interactive">fresh parsley,<br><span class="detail">chopped</span></td>
 				</tr>
 				<tr id="ingredients">
-					<td id="ing-amount">1</td>
+					<td id="ing-amount" class="leap-interactive">1</td>
 					<td class="dots">
 						<div class="circle full-circle reg-color"></div>
 					</td>
-					<td id="ing-type" class="item">garlic clove,<br><span class="detail">minced</span></td>
+					<td id="ing-type" class="item leap-interactive">garlic clove,<br><span class="detail">minced</span></td>
 				</tr>
 				<tr id="ingredients">
-					<td id="ing-amount">1/2 tsp</td>
+					<td id="ing-amount" class="leap-interactive">1/2 tsp</td>
 					<td class="dots">
 						<div class="circle half-circle tsp-color"></div>
 					</td>
-					<td id="ing-type" class="item">salt</td>
+					<td id="ing-type" class="item leap-interactive">salt</td>
 				</tr>
 				<tr id="ingredients">
-					<td id="ing-amount">1/4 cup</td>
+					<td id="ing-amount" class="leap-interactive">1/4 cup</td>
 					<td class="dots">
-						<div class="circle quarter-circle cup-color"></div>
+						<div class="circle one-quarter-circle cup-color"></div>
 					</td>
-					<td id="ing-type" class="item">parmesan cheese</td>
+					<td id="ing-type" class="item leap-interactive">parmesan cheese</td>
 				</tr>
 
 				<tr class="table-space">
@@ -149,11 +156,11 @@
 				</tr>
 
 				<tr id="ingredients">
-					<td id="ing-amount">1 lb</td>
+					<td id="ing-amount" class="leap-interactive">1 lb</td>
 					<td class="dots">
 						<div class="circle quarter-circle lbs-color"></div>
 					</td>
-					<td id="ing-type" class="item">spaghetti noodles,<br>cooked al dente</td>
+					<td id="ing-type" class="item leap-interactive">spaghetti noodles,<br>cooked al dente</td>
 					<td class="directions">
 						<ul>
 							<li>Serve sauce &amp; meatballs over spaghetti</li>
@@ -174,7 +181,7 @@
 			</ul>
 		</div>
 
-		<!-- <div id="ing-2" class="popup measurements">
+		<div id="ing-2" class="popup measurements">
 			<ul>
 				<li>32 oz</li>
 				<li>907 g</li>
@@ -236,7 +243,7 @@
 				<li>454 g</li>
 				<li>2 cups</li>
 			</ul>
-		</div> -->
+		</div>
 
 		<!-- Substitute -->
 		<div id="sub-1" class="popup substitutes">
@@ -248,7 +255,7 @@
 			<p>30 oz = 30 oz</p>
 		</div>
 
-		<!-- <div id="sub-2" class="popup substitutes">
+		<div id="sub-2" class="popup substitutes">
 			<img src="img/sm-1.jpg" />
 			<ul>
 				<li>Italian sausage</li>
@@ -297,7 +304,7 @@
 			<img src="img/sm-1.jpg" />
 			<ul>
 				<li>Garlic powder</li>
-				<li>Garlic flakes</li>  <!-- 1 clove = 1/2 tsp
+				<li>Garlic flakes</li>  <!-- 1 clove = 1/2 tsp -->
 			</ul>
 			<p>1 clove = 1/8 tsp</p>
 		</div>
@@ -317,7 +324,18 @@
 				<li>Angel hair pasta</li>
 			</ul>
 			<p>1 lbs = 1 lbs</p>
-		</div>-->
+		</div>
 
+		<!-- Init Leap, Set all "a" interactive, use 1 Leap cursor/finger -->
+		<script>
+			LeapManager.init({interactiveSelector:"a",maxCursors:1});
+
+			LeapManager.init({
+				interactiveSelector: "a",
+				maxCursors:3,
+				enableMetaGestures: true,
+				enableDefaultMetaGestureActions: true
+			});
+		</script>
 	</body>
 </html>

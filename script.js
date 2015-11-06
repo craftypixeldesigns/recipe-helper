@@ -43,25 +43,27 @@ function popup(type) {
 }
 
 function amountUpdate(event) {
-
-    if ($("#ingredients td:contains('2 jars')")) {
+    if ($(".one td:contains('2 jars')")) {
         $("#ing-1").css({top: 830, left: 20});
         $("#ing-1").toggle();
     }
 }
 
 function typeUpdate() {
-    // $("#ingredients td:contains('spaghetti sauce')").html("");
     if ($("#ingredients td:contains('spaghetti sauce')")) {
-        $("#sub-1").css({top: 750, left: 80});
+        $("#sub-1").css({top: 720, left: 80});
         $("#sub-1").toggle();
         // TODO click li, change img src=""
+
+        // $("#ingredients td:contains('spaghetti sauce')").html("");
     }
 
     
 }
 
 $(document).ready(function() {
+    // Leapmotion
+
     $("#pbar_outerdiv").click(function() {
         if (cFlag == undefined) {
             clearTimeout(timer);
