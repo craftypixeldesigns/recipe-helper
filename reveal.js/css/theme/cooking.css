@@ -495,7 +495,7 @@ div.cook-total {
 	font-weight: 600;
 	position: absolute;
 	top: 0;
-	left: 1050px;
+	left: 1020px;
 	display: none;
 }
 
@@ -525,7 +525,7 @@ div.cook-total {
 	font-weight: 600;
 	position: absolute;
 	top: 0;
-	left: 1050px;
+	left: 1020px;
 }
 
 .popup {
@@ -773,6 +773,10 @@ div.cook-total {
 
 .img-directions img {
 	width: 500px;
+}
+
+.img-instructions {
+	height: 650px;
 }
 
 .vid-container {

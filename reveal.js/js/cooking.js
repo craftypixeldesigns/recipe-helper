@@ -40,4 +40,13 @@ $(document).ready(function() {
             cFlag = false;
         }
     });
+
+    $(".item").click(function() {
+        if($(".extra").css('display') == 'none') {
+            $(".extra").fadeIn(300).show(); 
+        }
+        else if ($(".extra").css('display') == 'block') {
+            $(".extra").fadeOut(300).hide();
+      }
+    });
 }); 
