@@ -15,4 +15,4 @@ See [instructions.png](https://github.com/missCarrieMah/recipe-helper/blob/maste
 * [Swipe](https://developer.leapmotion.com/documentation/javascript/api/Leap.SwipeGesture.html#SwipeGesture) left or right to navigate pages (left goes back, right goes forward)
 * [Swipe](https://developer.leapmotion.com/documentation/javascript/api/Leap.SwipeGesture.html#SwipeGesture) up or down to get more information about the ingredients (equivalent measurement units and ingredient substitutions)
 * Move finger in a [circular motion](https://developer.leapmotion.com/documentation/javascript/api/Leap.CircleGesture.html#CircleGesture) on Slide 4 to start or pause the receipe time progress bar
-* Tap finger in a [down-upwards motion](https://developer.leapmotion.com/documentation/javascript/api/Leap.KeyTapGesture.html#KeyTapGesture) on Slide to start or pause the instructitional
+* Tap finger in a [down-upwards motion](https://developer.leapmotion.com/documentation/javascript/api/Leap.KeyTapGesture.html#KeyTapGesture) on Slide 5 to start or pause the instructitional
