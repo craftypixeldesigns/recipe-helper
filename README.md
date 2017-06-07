@@ -1,8 +1,15 @@
 # recipe-helper
-Augmenting a mobile device with a leap motion. Optimizing the recipe flow for novice chefs. For a school assignment (hoping to expand for future).
+Optimizing the recipe flow for novice chefs by augmenting a mobile device using the Leap Motion API.
 
-# To run:
+Interested in the design process? Read the [case study](https://medium.com/portfolio-carrie-mah/the-recipe-helper-834686422f52)
 
+## Instructions on how to run:
+
+**Viewing the layout**:
+* Download the repository
+* In the reveal.js folder, open `index.html`
+
+**Editing the code**:
 * Requires a browser (optimal on Google Chrome)
 * Requires the [Leap Motion](https://developer.leapmotion.com/) SDK
 * Requires [Node.js](https://nodejs.org/en/) & [Grunt](http://gruntjs.com/getting-started) to run [Reveal.js](https://github.com/hakimel/reveal.js)
@@ -12,6 +19,7 @@ Augmenting a mobile device with a leap motion. Optimizing the recipe flow for no
 ## Gestures:
 
 See [instructions.png](https://github.com/missCarrieMah/recipe-helper/blob/master/reveal.js/img/instructions.png) for a diagram
+
 * [Swipe](https://developer.leapmotion.com/documentation/javascript/api/Leap.SwipeGesture.html#SwipeGesture) left or right to navigate pages (left goes back, right goes forward)
 * [Swipe](https://developer.leapmotion.com/documentation/javascript/api/Leap.SwipeGesture.html#SwipeGesture) up or down to get more information about the ingredients (equivalent measurement units and ingredient substitutions)
 * Move finger in a [circular motion](https://developer.leapmotion.com/documentation/javascript/api/Leap.CircleGesture.html#CircleGesture) on Slide 4 to start or pause the receipe time progress bar
